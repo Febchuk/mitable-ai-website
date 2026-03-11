@@ -1,10 +1,12 @@
 export { HeroSection } from "./hero-section";
 export { LogoMarquee } from "./logo-marquee";
 export { FlowComparisonSection } from "./flow-comparison-section";
+export { ProblemSection } from "./problem-section";
 export { FeaturesSection } from "./features-section";
 export { TimelineSection } from "./timeline-section";
 export { UseCasesSection } from "./use-cases-section";
 export { PrivacySection } from "./privacy-section";
+export { FaqsSection } from "./faqs-section";
 export { PricingSection } from "./pricing-section";
 export { CTASection } from "./cta-section";
 export { Footer } from "./footer";

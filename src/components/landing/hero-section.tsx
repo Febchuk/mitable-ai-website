@@ -83,11 +83,12 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
                     >
                         {hero.headline}{" "}
                         <span className="underline-accent text-brand-400">{hero.headlineAccent}</span>
+                        {"headlineTrailing" in hero && hero.headlineTrailing}
                     </motion.h1>
 
                     {/* ── Subheadline ── */}
                     <motion.p
-                        className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl"
+                        className="mt-6 max-w-2xl text-center text-sm leading-relaxed text-gray-400 md:whitespace-nowrap md:text-base"
                         initial={{ opacity: 0, y: 16 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
@@ -243,7 +244,7 @@ export const HeroSection = ({ className }: HeroSectionProps) => {
                             <div className="flex h-7 w-56 items-center justify-center gap-3 rounded-full border border-gray-800/20 bg-gray-900/20 sm:w-60">
                                 <div className="size-2 rounded-full bg-gray-700" />
                                 <span className="font-mono text-[10px] text-gray-700">00:32:08</span>
-                                <span className="font-mono text-[10px] text-gray-800">Slack</span>
+                                <span className="font-mono text-[10px] text-gray-800">Teams</span>
                             </div>
                         </div>
                     </motion.div>
